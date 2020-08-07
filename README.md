@@ -1,5 +1,7 @@
 # ts-promisify-callback
 
+![npm](https://img.shields.io/npm/v/ts-promisify-callback)
+
 Turns any function ending with the "popular" `(Error, Result)` callback format into a `Promise`. Type-safe!
 
 ## Install
