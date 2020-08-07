@@ -1,6 +1,6 @@
 # ts-promisify-callback
 
-Turns any function ending with the "popular" `(Error, Result)` callback format into a `Promise`.
+Turns any function ending with the "popular" `(Error, Result)` callback format into a `Promise`. Type-safe!
 
 ## Install
 
@@ -22,6 +22,7 @@ function helloWithCallback(
 }
 
 let helloAsPromise = promisifyCallback(helloWithCallback);
+// let helloAsPromise: (name: string, age: number) => Promise<string>
 
 (async () => {
   let greeting = await helloAsPromise("hello", 31);
