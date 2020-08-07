@@ -1,0 +1,29 @@
+{
+  "name": "ts-promisify-callback",
+  "version": "0.1.0",
+  "description": "Turns any function ending with the standard \"Error, Result\" callback format into a promise",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChuckJonas/ts-promisify-callback.git"
+  },
+  "keywords": [
+    "typescript",
+    "callback",
+    "promise"
+  ],
+  "author": "charlie jonas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChuckJonas/ts-promisify-callback/issues"
+  },
+  "homepage": "https://github.com/ChuckJonas/ts-promisify-callback#readme",
+  "devDependencies": {
+    "typescript": "^4.0.0-dev.20200803"
+  }
+}
