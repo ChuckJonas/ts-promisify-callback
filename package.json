@@ -1,6 +1,6 @@
 {
   "name": "ts-promisify-callback",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Turns any function ending with the standard \"Error, Result\" callback format into a promise",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

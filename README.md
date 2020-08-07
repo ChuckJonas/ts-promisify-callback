@@ -1,26 +1,36 @@
 # ts-promisify-callback
 
-Turns any function ending with the standard `(Error, Result)` callback format into a promise.
+Turns any function ending with the "popular" `(Error, Result)` callback format into a `Promise`.
+
+## Install
+
+> npm install ts-promisify-callback
 
 ## Usage
 
-**Requires `typescript@^4.0`**
+**IMPORTANT:** This library requires `typescript@^4.0` (currently in beta)!
 
 ```ts
 import { promisifyCallback } from "ts-promisify-callback";
 
-function helloCallback(
+function helloWithCallback(
   name: string,
   age: number,
-  callback: (err: Error | null, result: string) => void
+  cb: (err: Error | null, result: string) => void
 ) {
-  callback(null, `I'm ${name}, age ${age}`);
+  cb(null, `I'm ${name}, age ${age}`);
 }
 
-let fooPromise = promisifyCallback(helloCallback);
+let helloAsPromise = promisifyCallback(helloWithCallback);
 
 (async () => {
-  let greeting = await fooPromise("hello", 31);
+  let greeting = await helloAsPromise("hello", 31);
   alert(greeting);
 })();
 ```
+
+## Contributing
+
+This is a very simple library, but I'm sure there are many ways to improve it to be more flexible...
+
+Pull Requests Welcome!
