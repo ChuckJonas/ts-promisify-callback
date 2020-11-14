@@ -10,7 +10,7 @@ Turns any function ending with the "popular" `(Error, Result)` callback format i
 
 ## Usage
 
-**IMPORTANT:** This library requires `typescript@^4.0`!
+**IMPORTANT:** This library requires `typescript@^4.0`
 
 ```ts
 import { promisifyCallback } from "ts-promisify-callback";
